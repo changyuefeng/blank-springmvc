@@ -1,6 +1,9 @@
 package com.cyf.interceptors;
 
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-public class BaseInterceptor {
+@Component
+public class BaseInterceptor extends HandlerInterceptorAdapter {
 
 }

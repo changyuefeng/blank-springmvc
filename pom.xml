@@ -10,8 +10,9 @@
 
 	<properties>
 		<slf4j.version>1.6.4</slf4j.version>
-		<spring.version>3.1.2.RELEASE</spring.version>
+		<spring.version>4.1.5.RELEASE</spring.version>
 		<jdk.version>1.7</jdk.version>
+		<freemarker.version>2.3.20</freemarker.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -64,10 +65,23 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
 			<version>1.6.9</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
@@ -79,6 +93,12 @@
 			<version>2.2</version>
 		</dependency>
 		<!-- spring end -->
+
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>${freemarker.version}</version>
+		</dependency>
 
 		<!-- mybatis begin -->
 		<dependency>
