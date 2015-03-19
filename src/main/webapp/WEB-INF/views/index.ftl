@@ -7,7 +7,7 @@
 <meta name="keywords" content=""/>
 </head>
 <body>
-	hello,${username}
+	hello,${username},${hello}
 
 
 </body>

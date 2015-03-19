@@ -66,8 +66,8 @@
 	 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="
-		  cn.com.abel.springProject.mapper,
-		  cn.com.abel.springProject.dao
+		  com.cyf.campus.mapper,
+		  com.cyf.campus.dao
 		" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>

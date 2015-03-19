@@ -12,17 +12,17 @@ import com.cyf.campus.model.SysUser;
 @RequestMapping("")
 public class IndexController {
 
-    @Autowired
-    private SysUserMapper sysUserDao;
+     @Autowired
+     private SysUserMapper sysUserMapper;
 
     @RequestMapping
     public String index(ModelMap model) {
 
         // 从testTable中查找ID为1的记录
-        SysUser sysUser = sysUserDao.selectByPrimaryKey(1L);
+         SysUser sysUser = sysUserMapper.selectByPrimaryKey(1L);
 
-        model.addAttribute("hello", "hfffello spring mvc");
-        model.addAttribute("username", sysUser.getUserName());
+        model.addAttribute("hello", "hello to spring mvc");
+         model.addAttribute("username", sysUser.getUserName());
         return "index";
     }
 
